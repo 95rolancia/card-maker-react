@@ -1,0 +1,9 @@
+{
+    "emmet.includeLanguages": {
+       "javascript": "javascriptreact"
+       "postcss": "css"
+    },
+    "emmet.syntaxProfiles": {
+      "postcss": "css"
+    },
+ }
