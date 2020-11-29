@@ -1,0 +1,28 @@
+button {
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+}
+
+.login {
+  width: 25em;
+  text-align: center;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5em 0em;
+}
+
+.body span {
+  font-size: 2rem;
+  padding-bottom: 1em;
+}
+
+.google,
+.github {
+  margin: 0.2em 1em;
+  font-size: 1.3rem;
+  border-radius: 1em;
+}

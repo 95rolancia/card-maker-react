@@ -1,0 +1,29 @@
+@value makerBlack from '../../common/colors.css';
+
+.header {
+  width: 100%;
+  background-color: skyblue;
+  text-align: center;
+  position: relative;
+}
+
+.logo {
+  padding-top: 1em;
+  width: 4em;
+  height: 3em;
+}
+
+.title {
+  margin: 0;
+  padding-bottom: 0.2em;
+  color: whitesmoke;
+}
+
+.logout {
+  position: absolute;
+  right: 1em;
+  top: 1em;
+  border-radius: 1em;
+  color: white;
+  background-color: makerBlack;
+}
