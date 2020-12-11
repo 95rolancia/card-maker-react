@@ -6,7 +6,7 @@ import { useHistory } from "react-router-dom";
 import CardMaker from "../card_maker/card_maker";
 import CardPreview from "../card_preview/card_preview";
 
-const Maker = ({ authService }) => {
+const Maker = ({ FileInput, authService }) => {
   const [cards, setCards] = useState({
     1: {
       id: "1",
@@ -76,6 +76,7 @@ const Maker = ({ authService }) => {
       <Header className={styles.header} onLogout={onLogout} />
       <section className={styles.content}>
         <CardMaker
+          FileInput={FileInput}
           cards={cards}
           addCard={createOrupdateCard}
           updateCard={createOrupdateCard}
