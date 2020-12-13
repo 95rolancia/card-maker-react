@@ -1,6 +1,8 @@
 @value makerBlack from '../../common/colors.css';
 
 .header {
+  position: fixed;
+  top: 0;
   width: 100%;
   background-color: skyblue;
   text-align: center;
