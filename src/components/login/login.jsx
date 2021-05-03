@@ -3,6 +3,7 @@ import { useHistory } from "react-router-dom";
 import Footer from "../footer/footer";
 import Header from "../header/header";
 import styles from "./login.module.css";
+
 const Login = ({ authService }) => {
   const history = useHistory();
   const goToMaker = (userId) => {
@@ -27,14 +28,20 @@ const Login = ({ authService }) => {
   return (
     <section className={styles.login}>
       <Header />
-      <section className={styles.body}>
+      <section>
         <h1>Login</h1>
-        <button className={styles.google} onClick={onLogin}>
-          Google
-        </button>
-        <button className={styles.github} onClick={onLogin}>
-          Github
-        </button>
+        <ul className={styles.btns}>
+          <li className={styles.item}>
+            <button className={styles.btn} onClick={onLogin}>
+              Google
+            </button>
+          </li>
+          <li className={styles.item}>
+            <button className={styles.btn} onClick={onLogin}>
+              Github
+            </button>
+          </li>
+        </ul>
       </section>
       <Footer />
     </section>
