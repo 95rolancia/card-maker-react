@@ -1,28 +1,37 @@
-button {
-  background-color: transparent;
+@value makerLightPink, makerBlack, makerWhite, makerGreen from '../../common/colors.css';
+
+.login {
+  display: flex;
+  flex-direction: column;
+  width: 30em;
+  text-align: center;
+  background-color: makerWhite;
+  border: 1px solid darkgrey;
+}
+
+.btns {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  list-style: none;
+  padding: 0.5em;
+}
+
+.item {
+  margin-bottom: 0.5em;
+}
+
+.btn {
+  width: 100%;
+  height: 2.5em;
+  font-size: 1.2rem;
+  border-radius: 1.2rem;
+  margin-bottom: 0.5em;
   outline: none;
+  background-color: transparent;
   cursor: pointer;
 }
 
-.login {
-  width: 25em;
-  text-align: center;
-}
-
-.body {
-  display: flex;
-  flex-direction: column;
-  padding: 1.5em 0em;
-}
-
-.body span {
-  font-size: 2rem;
-  padding-bottom: 1em;
-}
-
-.google,
-.github {
-  margin: 0.2em 1em;
-  font-size: 1.3rem;
-  border-radius: 1em;
+.btn:hover {
+  background-color: makerLightPink;
 }
