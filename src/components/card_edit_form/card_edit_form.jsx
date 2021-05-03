@@ -4,7 +4,6 @@ import styles from "./card_edit_form.module.css";
 const CardEditForm = ({ FileInput, card, updateCard, deleteCard }) => {
   const { name, company, title, email, message, theme, fileName } = card;
 
-  const formRef = useRef();
   const nameRef = useRef();
   const companyRef = useRef();
   const themeRef = useRef();
